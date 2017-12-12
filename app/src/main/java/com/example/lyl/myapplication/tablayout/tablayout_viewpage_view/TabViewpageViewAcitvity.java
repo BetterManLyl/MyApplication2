@@ -109,7 +109,7 @@ public class TabViewpageViewAcitvity extends BaseActivity {
     public void updateTv(int position) {
         View view = myPageAdapter.getCurrentView(position);
         TextView te = (TextView) view.findViewById(R.id.tv_tab_viewpage);
-        te.setText("当前页为第" + position + "页");
+         te.setText("当前页为第" + position + "页");
     }
 
     class MyPageAdapter extends PagerAdapter {
