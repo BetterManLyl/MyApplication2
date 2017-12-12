@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启动activity的方式" />
+
+    <Button
+        android:id="@+id/btn_standard_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="standard启动"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_singletop_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="singletop启动"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_singletask_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="singletask启动"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_singleinstance_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="singleinstance启动"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试button的按下，抬起事件监听"
+        android:textAllCaps="false"
+
+        />
+
+</LinearLayout>

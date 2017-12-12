@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_one"
+        android:icon="@mipmap/companychoice"
+        android:orderInCategory="9"
+        android:title="X"
+        app:showAsAction="withText|always"></item>
+    <item
+        android:id="@+id/menu_two"
+        android:icon="@mipmap/wifi_connect"
+        android:orderInCategory="9"
+        android:title="X"
+        app:showAsAction="withText|always"></item>
+    <item
+        android:id="@+id/menu_three"
+        android:icon="@mipmap/wifi_connect"
+        android:orderInCategory="9"
+        android:title="X"
+        app:showAsAction="withText|always"></item>
+    <item
+        android:id="@+id/menu_four"
+        android:icon="@mipmap/wifi_connect"
+        android:orderInCategory="9"
+        android:title="X"
+        app:showAsAction="withText|always"></item>
+    <item
+        android:id="@+id/menu_five"
+        android:icon="@mipmap/wifi_connect"
+        android:orderInCategory="9"
+        android:title="X"
+        app:showAsAction="withText|always"></item>
+</menu>

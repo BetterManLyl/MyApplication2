@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_dispatchTouchEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dispatchTouchEvent 事件"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_onInterceptTouchEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="onInterceptTouchEvent  事件"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_onTouchEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="onTouchEvent 事件"
+            android:textAllCaps="false" />
+
+        <com.example.lyl.myapplication.dispatchevent.ButtonTouch
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:text="自定义button" />
+
+    </LinearLayout>
+</LinearLayout>

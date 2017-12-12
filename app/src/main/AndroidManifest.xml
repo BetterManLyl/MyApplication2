@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lyl.myapplication">
+
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" /> <!--表示此app只支持拥有BLE的设备上运行-->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--权限在api23+需要动态申请-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <application
+        android:name=".MyApplicaton"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".testdialog.DialogActivity" />
+        <activity android:name=".testhandler.TestHandlerActivity" />
+        <activity android:name=".testsocket.MainActivity" />
+        <!--<activity android:name=".socketclient.MainActivity" />-->
+        <activity android:name=".testmenu.TestMenuActivity" />
+        <activity android:name=".testnetworkstatelistener.TestNetWork" />
+        <activity android:name=".testbluesocket.BlueToothActivity" />
+
+        <activity android:name=".text_database.DataBaseActivity" />
+        <!--加上这个可以使界面变成透明色android:theme="@style/Transparent"-->
+        <activity android:name=".testblemac.BLEmacConnectedActivity" />
+
+        <service android:name="com.inuker.bluetooth.library.BluetoothService" />
+
+        <activity android:name=".testble.TestBLEactivity" />
+        <activity android:name=".testbaseactivity.SubClass1" />
+
+        <service android:name=".testblemac.MyService" />
+
+        <activity android:name=".testcountdow.CountDownActivity" />
+        <activity android:name=".testexpandlistview.TestExpandlistview" />
+        <activity android:name=".testrecyclerandgridview.RecyclerViewActivity" />
+        <activity android:name=".testbofang.RecordActivity" />
+        <activity android:name=".testprogressbar.ProgressActivity" />
+        <activity android:name=".testexpandlistview.TestExpandlistview2" />
+        <activity android:name=".testbofang.RecordActivity2" />
+        <activity android:name=".customview.CustomView" />
+        <activity android:name=".testpermissionrequest.PermissionRequestActivity" />
+        <activity android:name=".rxjava.RxJavaActivity" />
+        <activity android:name=".rxjava.RxBusActivity" />
+        <activity
+            android:name=".AndroidChartActivity.AndroidChartActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".AndroidChartActivity.MoreLinechartActivity"
+            android:screenOrientation="landscape" />
+
+        <activity android:name=".rxandroid.RxAndroidActivity" />
+        <activity android:name=".okhttp.OkHttpActivity" />
+        <activity android:name=".retrofit.FilePostActivity" />
+        <activity android:name=".useframe.FrameActivity" />
+        <activity android:name=".useframe.DialogActivity" />
+        <activity android:name=".useframe.AnimationsActivity" />
+        <activity android:name=".recyclerview.RecyclerOne" />
+        <activity android:name=".recyclerview.RecyclerViewActivity" />
+        <activity android:name=".layoutinflate.InflateActivity" />
+        <activity android:name=".recyclerview.BaseRecyclerViewAdapterHelperActivity" />
+        <activity android:name=".recyclerview.BaseAdapterMultipeActivity" />
+        <!---->
+        <activity
+            android:name=".startactivitytype.StartActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".startactivitytype.SecondActivity"
+            android:launchMode="standard" />
+        <activity
+            android:name=".startactivitytype.ThirdActivity"
+            android:launchMode="standard" />
+
+        <activity android:name=".tablayout.tablayout_viewpage_fragment.TestTablayoutActivity" />
+        <activity android:name=".tablayout.ListFragmentActivity" />
+        <activity android:name=".tablayout.TabTypeActivity" />
+        <activity android:name=".tablayout.tablayout_viewpage_view.TabViewpageViewAcitvity" />
+        <activity android:name=".dispatchevent.DispatchTouchEventActivity" />
+        <activity android:name=".bmob.BmobMainActivity"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btn_false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加布局三个参数 view false " />
+
+    <Button
+        android:id="@+id/btn_true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加布局三个参数  view true" />
+
+    <Button
+        android:id="@+id/btn_true_null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加布局三个参数 null true" />
+
+    <Button
+        android:id="@+id/btn_false_null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加布局三个参数 null false" />
+
+    <Button
+        android:id="@+id/btn_two_false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加布局两个参数 false" />
+
+    <Button
+        android:id="@+id/btn_two_true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加布局两个参数 true" />
+
+    <Button
+        android:id="@+id/btn_clean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="clean view" />
+
+    <Button
+        android:id="@+id/btn_gohome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="回到桌面" />
+    <Button
+        android:id="@+id/btn_isdebug"
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:text="判断app是否是debug版本" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</LinearLayout>

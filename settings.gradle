@@ -1,0 +1,1 @@
+include ':app', ':client', ':crash-library', ':FastBleLib', ':calendarview'

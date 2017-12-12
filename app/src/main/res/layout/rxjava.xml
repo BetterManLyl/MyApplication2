@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_rxbindding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="btn_rxbindding" />
+
+
+            <Button
+                android:id="@+id/btn_drawable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="rx_drawable" />
+
+            <Button
+                android:id="@+id/btn_flatMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="rx_flatMap" />
+
+            <Button
+                android:id="@+id/btn_interval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="rx_interval" />
+
+            <Button
+                android:id="@+id/btn_rxbus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="跳转到rxbus" />
+
+            <Button
+                android:id="@+id/btn_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="过滤" />
+
+
+            <Button
+                android:id="@+id/btn_download"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="下载" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="登录" />
+            <Button
+                android:id="@+id/btn_login2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="login" />
+
+            <Button
+                android:id="@+id/btn_defer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="defer" />
+
+            <Button
+                android:id="@+id/btn_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="map" />
+
+            <Button
+                android:id="@+id/btn_flatmap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="flatmap" />
+
+            <Button
+                android:id="@+id/btn_concatmap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="concatmap" />
+            <Button
+                android:id="@+id/btn_flatMapIterable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="flatMapIterable" />
+            <Button
+                android:id="@+id/btn_take"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="take" />
+
+            <Button
+                android:id="@+id/btn_takeLast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="takeLast" />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发送验证码" />
+
+            <Button
+                android:id="@+id/btn_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="from" />
+
+            <Button
+                android:id="@+id/btn_just"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="just" />
+
+            <Button
+                android:id="@+id/btn_repet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="repet" />
+
+            <Button
+                android:id="@+id/btn_range"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="range" />
+
+            <Button
+                android:id="@+id/btn_timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="timer" />
+
+            <Button
+                android:id="@+id/btn_distinct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="distinct" />
+
+            <Button
+                android:id="@+id/btn_distinctUntilChanged"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="distinctUntilChanged" />
+
+            <Button
+                android:id="@+id/btn_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="first" />
+
+            <Button
+                android:id="@+id/btn_last"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="last" />
+
+            <Button
+                android:id="@+id/btn_skip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="skip" />
+
+            <Button
+                android:id="@+id/btn_skipLast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="skipLast" />
+
+            <Button
+                android:id="@+id/btn_ElementAt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ElementAt" />
+
+            <Button
+                android:id="@+id/btn_sample"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sample" />
+
+            <Button
+                android:id="@+id/btn_timeout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="timeout" />
+
+            <EditText
+                android:id="@+id/ed_debounce"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/btn_debounce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="debounce" />
+
+            <Button
+                android:id="@+id/btn_scan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="scan" />
+
+
+            <Button
+                android:id="@+id/btn_groupby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="groupby" />
+            <Button
+                android:id="@+id/btn_buffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="buffer" />
+            <Button
+                android:id="@+id/btn_window"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="window" />
+            <Button
+                android:id="@+id/btn_cast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cast" />
+            <Button
+                android:id="@+id/btn_merge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="merge" />
+            <Button
+                android:id="@+id/btn_zip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="zip" />
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

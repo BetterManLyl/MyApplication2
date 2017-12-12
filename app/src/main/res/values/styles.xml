@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="toolbarStyle">@style/toolbarBackStyle</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color333</item>
+    </style>
+
+    <!--子类style 继承父类appTheme-->
+    <style name="Base.Theme.my" parent="AppTheme">
+        <item name="android:progressBarStyle">@drawable/customactivityoncrash_error_image</item>
+    </style>
+
+    <!--设置toolbar的返回图标-->
+    <style name="toolbarBackStyle" parent="Base.Widget.AppCompat.Toolbar">
+
+        <item name="android:background">@color/colorAccent</item>
+
+    </style>
+
+    <style name="Transparent" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="mProgress_horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_horizontal_1
+        </item><!-- progress_horizontal -->
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+</resources>

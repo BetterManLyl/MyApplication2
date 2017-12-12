@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--定义名字叫MyView-->
+    <declare-styleable name="MyView">
+        <attr name="name" format="string" />
+        <attr name="bg" format="reference|color" />
+        <attr name="text_size" format="dimension" />
+    </declare-styleable>
+
+</resources>

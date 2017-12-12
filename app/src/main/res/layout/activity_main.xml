@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lyl.myapplication.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btn_bmob"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="bmob"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/btn_touchevent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="touchEvent"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/btn_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="测试tablayout"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_startactivity_way"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="测试activity的启动方式"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/layout_inflate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="layoutinflate"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="recyclerview"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="框架的使用" />
+
+            <Button
+                android:id="@+id/btn_retrofit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="retrofit" />
+
+            <Button
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="android 折线图"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/okhttp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="okhttp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_socket"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="socket"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_handler"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="handler"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="dialog"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/socket_client"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="dialog"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/menu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="menu"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/netListener"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="网络状态监听" />
+
+            <Button
+                android:id="@+id/test_bluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="蓝牙框架测试" />
+
+            <Button
+                android:id="@+id/test_bluetoothble"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="测试低功耗蓝牙" />
+
+            <Button
+                android:id="@+id/test_mac"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="测试使用mac地址连接" />
+
+            <Button
+                android:id="@+id/test_databae"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="测试数据库" />
+
+            <Button
+                android:id="@+id/test_base"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="测试basea" />
+
+            <Button
+                android:id="@+id/test_countdown"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="测试倒计时" />
+
+
+            <Button
+                android:id="@+id/test_expandlist"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="测试expandlistview列表"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/test_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="测试recyclerview嵌套gridview"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/test_record"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="测试seekbar播放器" />
+
+            <Button
+                android:id="@+id/test_progress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="测试progressbar的使用" />
+
+            <Button
+                android:id="@+id/test_expandlist2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="测试test_expandlist2" />
+
+            <Button
+                android:id="@+id/custom_view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="自定义view" />
+
+            <Button
+                android:id="@+id/btn_permission"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="权限申请" />
+
+            <Button
+                android:id="@+id/btn_rxjava"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="rxjava"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_rxandroid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="rxandroid"
+                android:textAllCaps="false" />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
