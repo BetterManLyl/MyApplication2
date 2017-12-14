@@ -108,6 +108,7 @@
         <activity android:name=".tablayout.tablayout_viewpage_view.TabViewpageViewAcitvity" />
         <activity android:name=".dispatchevent.DispatchTouchEventActivity" />
         <activity android:name=".bmob.BmobMainActivity"/>
+        <activity android:name=".takephoto_and_selectphoto.TakePhotoAndSelectPhotoActivity"/>
 
     </application>
 

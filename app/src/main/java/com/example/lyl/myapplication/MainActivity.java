@@ -22,6 +22,7 @@ import com.example.lyl.myapplication.rxandroid.RxAndroidActivity;
 import com.example.lyl.myapplication.rxjava.RxJavaActivity;
 import com.example.lyl.myapplication.startactivitytype.StartActivity;
 import com.example.lyl.myapplication.tablayout.TabTypeActivity;
+import com.example.lyl.myapplication.takephoto_and_selectphoto.TakePhotoAndSelectPhotoActivity;
 import com.example.lyl.myapplication.testbaseactivity.SubClass1;
 import com.example.lyl.myapplication.testble.TestBLEactivity;
 import com.example.lyl.myapplication.testblemac.BLEmacConnectedActivity;
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             test_countdown, test_expandlist, test_recycler, seek_bar, progress_btn,
             expendlist2, custom_view, btn_permission, btn_rxjava, rxandroid, androidChart,
             okhttp, btn_retrofit, btn_frame, recyclerview, layout_inflate, btn_startactivity_way,
-            btn_tablayout, btn_touchevent, btn_bmob;
+            btn_tablayout, btn_touchevent, btn_bmob,btn_take_photo;
 
     private Toolbar toolbar;
 
@@ -118,6 +119,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_tablayout = (Button) findViewById(R.id.btn_tablayout);
         btn_touchevent = (Button) findViewById(R.id.btn_touchevent);
         btn_bmob = (Button) findViewById(R.id.btn_bmob);
+        btn_take_photo= (Button) findViewById(R.id.btn_take_photo);
+        btn_take_photo.setOnClickListener(this);
         btn_bmob.setOnClickListener(this);
         btn_touchevent.setOnClickListener(this);
         btn_tablayout.setOnClickListener(this);
@@ -250,6 +253,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_bmob:
                 startActivity(new Intent(this, BmobMainActivity.class));
+                break;
+            case R.id.btn_take_photo:
+                startActivity(new Intent(this, TakePhotoAndSelectPhotoActivity.class));
                 break;
             default:
                 break;

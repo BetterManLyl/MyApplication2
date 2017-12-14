@@ -27,9 +27,11 @@ android {
         main {
             res.srcDirs = [
                     'src/main/res',
+                    'src/main/res_core',
+                    'src/main/res_sub',
                     'src/main/res/layouts',
                     'src/main/res/layouts/home',
-                    'src/main/res/layouts/food',
+                    'src/main/res/layouts/takephoto',
                     'src/main/res/layouts/frame',
                     'src/main/res/layouts/worksheet',
             ]
@@ -48,6 +50,7 @@ android {
         exclude 'META-INF/dependencies.txt'
         exclude 'META-INF/LGPL2.1'
         exclude 'META-INF/rxjava.properties'
+        exclude 'META-INF/style.xml'
     }
 //我添加的
     compileOptions {
@@ -105,14 +108,11 @@ dependencies {
     //动画
     compile 'com.airbnb.android:lottie:2.2.0'
     //glide
-    compile 'com.github.bumptech.glide:glide:4.0.0-RC1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
     //banner
     compile 'com.youth.banner:banner:1.4.10'
     //BaseRecyclerViewAdapterHelper
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
-
-
-
 
     //bmob
     //如果你想应用能够兼容Android6.0，请添加此依赖(org.apache.http.legacy.jar)
@@ -120,10 +120,12 @@ dependencies {
     //以下SDK开发者请根据需要自行选择
     //bmob-sdk：Bmob的android sdk包，包含了Bmob的数据存储、文件等服务，以下是最新的bmob-sdk:
     //3.5.5：请务必查看下面注释[1]
-    compile ('cn.bmob.android:bmob-sdk:3.5.5'){
+    compile('cn.bmob.android:bmob-sdk:3.5.5') {
         exclude group: 'io.reactivex:rxandroid'
         exclude group: 'io.reactivex:rxjava'
         exclude group: 'com.squareup.okhttp3'
 
     }
+    //类似微信拍照和选择照片
+    compile 'com.lzy.widget:imagepicker:0.6.1'  //指定版本
 }

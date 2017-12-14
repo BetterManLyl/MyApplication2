@@ -17,7 +17,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
+            <Button
+                android:id="@+id/btn_take_photo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="拍照"
+                android:textAllCaps="false" />
             <Button
                 android:id="@+id/btn_bmob"
                 android:layout_width="match_parent"
