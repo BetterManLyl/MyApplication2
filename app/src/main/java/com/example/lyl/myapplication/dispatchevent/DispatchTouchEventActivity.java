@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import com.blankj.utilcode.util.LogUtils;
 import com.example.lyl.myapplication.R;
 import com.example.lyl.myapplication.base.BaseActivity;
+import com.example.lyl.myapplication.fanxing.ListConnection;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -35,6 +36,9 @@ public class DispatchTouchEventActivity extends BaseActivity {
 
     @Override
     public void initView() {
+        ListConnection<String> listConnection=new ListConnection<>();
+        listConnection.say("syso");
+
         super.initView();
         llRootView.setOnTouchListener(new View.OnTouchListener() {
             @Override

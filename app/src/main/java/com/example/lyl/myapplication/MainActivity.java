@@ -1,9 +1,10 @@
 
 package com.example.lyl.myapplication;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -44,15 +45,17 @@ import org.greenrobot.eventbus.Subscribe;
 /**
  * 首页
  */
-public class MainActivity extends Activity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     private Button btn_socket, btn_handler, btn_dialog, socket_client, menu,
             netListener, blue_tooth, test_ble, test_mac, test_database, test_base,
             test_countdown, test_expandlist, test_recycler, seek_bar, progress_btn,
             expendlist2, custom_view, btn_permission, btn_rxjava, rxandroid, androidChart,
-            okhttp, btn_retrofit, btn_frame,recyclerview,layout_inflate,btn_startactivity_way,
-            btn_tablayout,btn_touchevent,btn_bmob;
+            okhttp, btn_retrofit, btn_frame, recyclerview, layout_inflate, btn_startactivity_way,
+            btn_tablayout, btn_touchevent, btn_bmob;
+
+    private Toolbar toolbar;
 
 
     private byte[] bbb = new byte[20];
@@ -68,6 +71,22 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     private void initView() {
+//是否显示
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("Title");
+        toolbar.setSubtitle("SubTitle");
+        toolbar.setLogo(R.mipmap.ic_launcher);
+        toolbar.setTitleTextColor(R.color.white);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
         btn_socket = (Button) findViewById(R.id.btn_socket);
         btn_handler = (Button) findViewById(R.id.btn_handler);
         btn_dialog = (Button) findViewById(R.id.btn_dialog);
@@ -93,12 +112,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
         okhttp = (Button) findViewById(R.id.okhttp);
         btn_retrofit = (Button) findViewById(R.id.btn_retrofit);
         btn_frame = (Button) findViewById(R.id.btn_frame);
-        recyclerview= (Button) findViewById(R.id.recyclerview);
-        layout_inflate= (Button) findViewById(R.id.layout_inflate);
-        btn_startactivity_way= (Button) findViewById(R.id.btn_startactivity_way);
-        btn_tablayout= (Button) findViewById(R.id.btn_tablayout);
-        btn_touchevent= (Button) findViewById(R.id.btn_touchevent);
-        btn_bmob= (Button) findViewById(R.id.btn_bmob);
+        recyclerview = (Button) findViewById(R.id.recyclerview);
+        layout_inflate = (Button) findViewById(R.id.layout_inflate);
+        btn_startactivity_way = (Button) findViewById(R.id.btn_startactivity_way);
+        btn_tablayout = (Button) findViewById(R.id.btn_tablayout);
+        btn_touchevent = (Button) findViewById(R.id.btn_touchevent);
+        btn_bmob = (Button) findViewById(R.id.btn_bmob);
         btn_bmob.setOnClickListener(this);
         btn_touchevent.setOnClickListener(this);
         btn_tablayout.setOnClickListener(this);
