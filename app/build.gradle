@@ -1,6 +1,9 @@
 apply plugin: 'com.android.application'
 apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'com.jakewharton.butterknife'
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:25.0.1'
+}
 
 android {
     compileSdkVersion 25
@@ -34,6 +37,7 @@ android {
                     'src/main/res/layouts/takephoto',
                     'src/main/res/layouts/frame',
                     'src/main/res/layouts/worksheet',
+                    'src/main/res/layouts/gesture'
             ]
 
         }
@@ -128,4 +132,7 @@ dependencies {
     }
     //类似微信拍照和选择照片
     compile 'com.lzy.widget:imagepicker:0.6.1'  //指定版本
+
+    //手势九宫格
+    compile 'com.takwolf.android:lock9view:0.1.1'
 }

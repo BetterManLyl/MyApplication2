@@ -24,6 +24,10 @@
     <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
+
+    <!--手势需要的权限-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <uses-feature
         android:name="android.hardware.bluetooth_le"
         android:required="true" />
@@ -107,9 +111,12 @@
         <activity android:name=".tablayout.TabTypeActivity" />
         <activity android:name=".tablayout.tablayout_viewpage_view.TabViewpageViewAcitvity" />
         <activity android:name=".dispatchevent.DispatchTouchEventActivity" />
-        <activity android:name=".bmob.BmobMainActivity"/>
-        <activity android:name=".takephoto_and_selectphoto.TakePhotoAndSelectPhotoActivity"/>
+        <activity android:name=".bmob.BmobMainActivity" />
+        <activity android:name=".takephoto_and_selectphoto.TakePhotoAndSelectPhotoActivity" />
 
+        <activity android:name=".Gesture.GestureActivity"/>
+        <activity android:name=".Gesture.NormalActivity" />
+        <activity android:name=".Gesture.LStyleActivity" />
     </application>
 
 </manifest>

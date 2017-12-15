@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.lyl.myapplication.AndroidChartActivity.AndroidChartActivity;
+import com.example.lyl.myapplication.Gesture.GestureActivity;
 import com.example.lyl.myapplication.bmob.BmobMainActivity;
 import com.example.lyl.myapplication.customview.CustomView;
 import com.example.lyl.myapplication.dispatchevent.DispatchTouchEventActivity;
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             test_countdown, test_expandlist, test_recycler, seek_bar, progress_btn,
             expendlist2, custom_view, btn_permission, btn_rxjava, rxandroid, androidChart,
             okhttp, btn_retrofit, btn_frame, recyclerview, layout_inflate, btn_startactivity_way,
-            btn_tablayout, btn_touchevent, btn_bmob,btn_take_photo;
+            btn_tablayout, btn_touchevent, btn_bmob,btn_take_photo,btn_gesture;
 
     private Toolbar toolbar;
 
@@ -120,6 +121,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_touchevent = (Button) findViewById(R.id.btn_touchevent);
         btn_bmob = (Button) findViewById(R.id.btn_bmob);
         btn_take_photo= (Button) findViewById(R.id.btn_take_photo);
+        btn_gesture=(Button) findViewById(R.id.btn_gesture);
+        btn_gesture.setOnClickListener(this);
         btn_take_photo.setOnClickListener(this);
         btn_bmob.setOnClickListener(this);
         btn_touchevent.setOnClickListener(this);
@@ -256,6 +259,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_take_photo:
                 startActivity(new Intent(this, TakePhotoAndSelectPhotoActivity.class));
+                break;
+            case R.id.btn_gesture:
+                startActivity(new Intent(this, GestureActivity.class));
                 break;
             default:
                 break;
