@@ -18,6 +18,7 @@ import com.example.lyl.myapplication.event.EventOne;
 import com.example.lyl.myapplication.event.EventTwo;
 import com.example.lyl.myapplication.layoutinflate.InflateActivity;
 import com.example.lyl.myapplication.okhttp.OkHttpActivity;
+import com.example.lyl.myapplication.qrcode.ZxingQrcodeActivity;
 import com.example.lyl.myapplication.retrofit.FilePostActivity;
 import com.example.lyl.myapplication.rxandroid.RxAndroidActivity;
 import com.example.lyl.myapplication.rxjava.RxJavaActivity;
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             test_countdown, test_expandlist, test_recycler, seek_bar, progress_btn,
             expendlist2, custom_view, btn_permission, btn_rxjava, rxandroid, androidChart,
             okhttp, btn_retrofit, btn_frame, recyclerview, layout_inflate, btn_startactivity_way,
-            btn_tablayout, btn_touchevent, btn_bmob,btn_take_photo,btn_gesture;
+            btn_tablayout, btn_touchevent, btn_bmob,btn_take_photo,btn_gesture,btn_qrscan;
 
     private Toolbar toolbar;
 
@@ -122,6 +123,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_bmob = (Button) findViewById(R.id.btn_bmob);
         btn_take_photo= (Button) findViewById(R.id.btn_take_photo);
         btn_gesture=(Button) findViewById(R.id.btn_gesture);
+        btn_qrscan= (Button) findViewById(R.id.btn_qrscan);
+        btn_qrscan.setOnClickListener(this);
         btn_gesture.setOnClickListener(this);
         btn_take_photo.setOnClickListener(this);
         btn_bmob.setOnClickListener(this);
@@ -262,6 +265,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_gesture:
                 startActivity(new Intent(this, GestureActivity.class));
+                break;
+            case R.id.btn_qrscan:
+                startActivity(new Intent(this, ZxingQrcodeActivity.class));
                 break;
             default:
                 break;

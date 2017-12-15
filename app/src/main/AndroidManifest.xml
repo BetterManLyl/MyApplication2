@@ -117,6 +117,7 @@
         <activity android:name=".Gesture.GestureActivity"/>
         <activity android:name=".Gesture.NormalActivity" />
         <activity android:name=".Gesture.LStyleActivity" />
+        <activity android:name=".qrcode.ZxingQrcodeActivity"/>
     </application>
 
 </manifest>

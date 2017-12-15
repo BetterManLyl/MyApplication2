@@ -37,7 +37,8 @@ android {
                     'src/main/res/layouts/takephoto',
                     'src/main/res/layouts/frame',
                     'src/main/res/layouts/worksheet',
-                    'src/main/res/layouts/gesture'
+                    'src/main/res/layouts/gesture',
+                    'src/main/res/layouts/qrcode'
             ]
 
         }
@@ -128,11 +129,15 @@ dependencies {
         exclude group: 'io.reactivex:rxandroid'
         exclude group: 'io.reactivex:rxjava'
         exclude group: 'com.squareup.okhttp3'
-
     }
     //类似微信拍照和选择照片
     compile 'com.lzy.widget:imagepicker:0.6.1'  //指定版本
 
     //手势九宫格
     compile 'com.takwolf.android:lock9view:0.1.1'
+
+    //二维码扫描
+    compile 'com.google.zxing:core:3.3.0'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.9@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.9@aar'
 }
