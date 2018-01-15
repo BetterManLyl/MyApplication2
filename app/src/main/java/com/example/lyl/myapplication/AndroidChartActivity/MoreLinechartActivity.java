@@ -26,7 +26,7 @@ public class MoreLinechartActivity extends AppCompatActivity {
 
         LineChartManager lineChartManager1 = new LineChartManager(lineChart1);
         LineChartManager lineChartManager2 = new LineChartManager(lineChart2);
-//设置x轴的数据
+        //设置x轴的数据
         ArrayList<Float> xValues = new ArrayList<>();
         for (int i = 0; i <= 10; i++) {
             xValues.add((float) i);

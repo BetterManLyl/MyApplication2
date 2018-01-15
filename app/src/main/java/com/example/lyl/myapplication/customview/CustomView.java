@@ -20,6 +20,7 @@ public class CustomView extends BaseActivity {
     private MyViewpager myViewpager;
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
+    private MyButton my_button;
     private int[] ids = {R.mipmap.ic_launcher,
             R.mipmap.menu3, R.mipmap.menu3_grey, R.mipmap.menu4, R.mipmap.menu4_grey};
 

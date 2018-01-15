@@ -89,13 +89,10 @@ dependencies {
     //RxJava
     compile 'io.reactivex:rxandroid:1.2.0'
     compile 'io.reactivex:rxjava:1.1.6'
-
     //okhttp
     compile 'com.squareup.okhttp3:okhttp:3.3.1'
-
     //rxbinding
     compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
-
     //retrofit,converter,adapter三个同时使用
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
@@ -105,11 +102,9 @@ dependencies {
     //butterknife
     compile 'com.jakewharton:butterknife:8.5.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
-
     //material_dialog的使用  弹出框
     compile 'com.afollestad.material-dialogs:core:0.9.1.0'
     compile 'com.afollestad.material-dialogs:commons:0.9.1.0'
-
     //动画
     compile 'com.airbnb.android:lottie:2.2.0'
     //glide
@@ -118,7 +113,6 @@ dependencies {
     compile 'com.youth.banner:banner:1.4.10'
     //BaseRecyclerViewAdapterHelper
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
-
     //bmob
     //如果你想应用能够兼容Android6.0，请添加此依赖(org.apache.http.legacy.jar)
     compile 'cn.bmob.android:http-legacy:1.0'
@@ -131,13 +125,16 @@ dependencies {
         exclude group: 'com.squareup.okhttp3'
     }
     //类似微信拍照和选择照片
-    compile 'com.lzy.widget:imagepicker:0.6.1'  //指定版本
-
+    compile 'com.lzy.widget:imagepicker:0.6.1'
+    //指定版本
     //手势九宫格
     compile 'com.takwolf.android:lock9view:0.1.1'
-
     //二维码扫描
     compile 'com.google.zxing:core:3.3.0'
     compile 'cn.bingoogolapple:bga-qrcodecore:1.1.9@aar'
     compile 'cn.bingoogolapple:bga-zxing:1.1.9@aar'
+    //OkGo网络请求
+    compile 'com.lzy.net:okgo:3.0.4'
+    //测试上传依赖
+    compile 'com.github.lyl953147712:EventbusDemo:0.1'
 }

@@ -21,7 +21,7 @@ allprojects {
         jcenter()
         apply plugin: 'me.tatarka.retrolambda'//我添加的
         maven { url "https://jitpack.io" }
-//Bmob的maven仓库地址--必填
+        //Bmob的maven仓库地址--必填
         maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
     }
 }

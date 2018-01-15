@@ -19,6 +19,8 @@ import android.widget.Toast;
 import com.example.lyl.myapplication.testblemac.MyService;
 import com.example.lyl.myapplication.testmenu.BlueToothControl;
 
+import runa.mylibrary.Utils;
+
 import static com.example.lyl.myapplication.testmenu.BlueToothControl.isConnected;
 
 /**
@@ -40,7 +42,6 @@ public abstract class BaseActivity extends AppCompatActivity implements MyServic
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         blueToothControl = BlueToothControl.getInstance();
-
     }
 
     public void showToast(String message) {

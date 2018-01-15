@@ -44,6 +44,8 @@ import com.wuxiaolong.androidutils.library.ActivityManagerUtil;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 
+import runa.mylibrary.MyActivity;
+
 
 /**
  * 首页

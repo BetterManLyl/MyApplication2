@@ -24,12 +24,16 @@ import com.example.lyl.myapplication.R;
 import com.example.lyl.myapplication.api.LoginSuccess;
 import com.example.lyl.myapplication.api.NetWorkService;
 import com.example.lyl.myapplication.api.Utils;
+import com.example.lyl.myapplication.bean.Liebiao;
 import com.example.lyl.myapplication.rxjava.login.JsonUtils;
 import com.example.lyl.myapplication.rxjava.login.LoginUtils;
 import com.example.lyl.myapplication.rxjava.login.entity.Login;
 import com.inuker.bluetooth.library.utils.MD5Utils;
 import com.jakewharton.rxbinding.view.RxView;
 import com.jakewharton.rxbinding.widget.RxTextView;
+import com.lzy.okgo.OkGo;
+import com.lzy.okgo.callback.AbsCallback;
+import com.lzy.okgo.model.Response;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -80,6 +84,24 @@ public class RxJavaActivity extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rxjava);
+//        OkGo.<Liebiao>post("")
+//                .params("", "")
+//                .execute(new AbsCallback<Liebiao>() {
+//                    @Override
+//                    public void onError(Response<Liebiao> response) {
+//                        super.onError(response);
+//                    }
+//
+//                    @Override
+//                    public void onSuccess(Response<Liebiao> response) {
+//
+//                    }
+//
+//                    @Override
+//                    public Liebiao convertResponse(okhttp3.Response response) throws Throwable {
+//                        return null;
+//                    }
+//                });
         ed_debounce = (EditText) findViewById(R.id.ed_debounce);
         button = (Button) findViewById(R.id.btn_rxbindding);
         btn_drawable = (Button) findViewById(R.id.btn_drawable);
@@ -428,6 +450,9 @@ public class RxJavaActivity extends BaseActivity {
             }
         });
 
+        /**
+         * 获取RxBus传输的消息
+         */
         getRxBus();
 
 //        RxView.clicks(button)
@@ -1567,23 +1592,23 @@ public class RxJavaActivity extends BaseActivity {
         }).filter(new Func1<String, Boolean>() {
             @Override
             public Boolean call(String s) {
-                Log.e(TAG, "filter: " );
+                Log.e(TAG, "filter: ");
                 return true;
             }
         }).subscribe(new Subscriber<String>() {
             @Override
             public void onCompleted() {
-                Log.e(TAG, "onCompleted: " );
+                Log.e(TAG, "onCompleted: ");
             }
 
             @Override
             public void onError(Throwable e) {
-                Log.e(TAG, "onError: " );
+                Log.e(TAG, "onError: ");
             }
 
             @Override
             public void onNext(String s) {
-                Log.e(TAG, "onNext: " );
+                Log.e(TAG, "onNext: ");
             }
         });
 
@@ -1705,6 +1730,7 @@ public class RxJavaActivity extends BaseActivity {
 //
 //                    }
 //                });
+
 
         Observable.interval(0, 2, TimeUnit.SECONDS)
                 .observeOn(AndroidSchedulers.mainThread())

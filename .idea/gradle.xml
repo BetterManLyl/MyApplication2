@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/calendarview" />
             <option value="$PROJECT_DIR$/client" />
             <option value="$PROJECT_DIR$/crash-library" />
+            <option value="$PROJECT_DIR$/mylibrary" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
