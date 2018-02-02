@@ -58,7 +58,7 @@ public class TestHandlerActivity extends AppCompatActivity {
         ToastUtils.setBgColor(R.color.bj_color);
         activityManagerUtil = ActivityManagerUtil.getInstance();
         activityManagerUtil.pushOneActivity(this);
-        executor = Executors.newCachedThreadPool();
+        //executor = Executors.newCachedThreadPool();
         tv_handler = (TextView) findViewById(R.id.tv_handler);
         tv_handler_two = (TextView) findViewById(R.id.tv_handler_two);
         tv_handler_three = (TextView) findViewById(R.id.tv_handler_three);
@@ -100,8 +100,6 @@ public class TestHandlerActivity extends AppCompatActivity {
         Toast.makeText(this, "aa"+AppUtils.getAppPackageName(), Toast.LENGTH_SHORT).show();
         CleanUtils.cleanExternalCache();
         tv_handler.setText("handler");
-
-        BarUtils.hideNavBar(this);
 
         //子线程做UI的更新认为不安全，需要在主线程才能做更新
 //        tv_handler.setOnClickListener(new View.OnClickListener() {

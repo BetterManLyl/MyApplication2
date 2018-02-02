@@ -47,6 +47,9 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".testhybrid.HybridActivity"
+            android:screenOrientation="portrait" />
         <activity android:name=".testdialog.DialogActivity" />
         <activity android:name=".testhandler.TestHandlerActivity" />
         <activity android:name=".testsocket.MainActivity" />
@@ -114,10 +117,10 @@
         <activity android:name=".bmob.BmobMainActivity" />
         <activity android:name=".takephoto_and_selectphoto.TakePhotoAndSelectPhotoActivity" />
 
-        <activity android:name=".Gesture.GestureActivity"/>
+        <activity android:name=".Gesture.GestureActivity" />
         <activity android:name=".Gesture.NormalActivity" />
         <activity android:name=".Gesture.LStyleActivity" />
-        <activity android:name=".qrcode.ZxingQrcodeActivity"/>
+        <activity android:name=".qrcode.ZxingQrcodeActivity" />
     </application>
 
 </manifest>

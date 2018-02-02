@@ -6,7 +6,6 @@ import com.blankj.utilcode.util.Utils;
 import com.example.lyl.myapplication.bean.User;
 import com.example.lyl.myapplication.takephoto_and_selectphoto.GlideImageLoader;
 import com.lzy.imagepicker.ImagePicker;
-import com.lzy.imagepicker.view.CropImageView;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.cache.CacheEntity;
 import com.lzy.okgo.cache.CacheMode;
@@ -42,15 +41,15 @@ public class MyApplicaton extends Application {
          */
         Utils.init(this);
         CustomActivityOnCrash.install(this);
-        User user = new User();
-        user.setAge(15);
-        user.setName("lyl");
-        localHashMap.put("user", user);
-        //第一：默认初始化
-        Bmob.initialize(this, "bf9d4dc0e5c77a22f59df84c6984a13b");
+//        User user = new User();
+//        user.setAge(15);
+//        user.setName("lyl");
+//        localHashMap.put("user", user);
+//        //第一：默认初始化
+//        Bmob.initialize(this, "bf9d4dc0e5c77a22f59df84c6984a13b");
 
 
-        initOkGo();
+      //  initOkGo();
 
 
 

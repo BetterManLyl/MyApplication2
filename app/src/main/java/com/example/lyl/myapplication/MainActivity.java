@@ -34,6 +34,7 @@ import com.example.lyl.myapplication.testdialog.DialogActivity;
 import com.example.lyl.myapplication.testexpandlistview.TestExpandlistview;
 import com.example.lyl.myapplication.testexpandlistview.TestExpandlistview2;
 import com.example.lyl.myapplication.testhandler.TestHandlerActivity;
+import com.example.lyl.myapplication.testhybrid.HybridActivity;
 import com.example.lyl.myapplication.testpermissionrequest.PermissionRequestActivity;
 import com.example.lyl.myapplication.testprogressbar.ProgressActivity;
 import com.example.lyl.myapplication.testrecyclerandgridview.RecyclerViewActivity;
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             test_countdown, test_expandlist, test_recycler, seek_bar, progress_btn,
             expendlist2, custom_view, btn_permission, btn_rxjava, rxandroid, androidChart,
             okhttp, btn_retrofit, btn_frame, recyclerview, layout_inflate, btn_startactivity_way,
-            btn_tablayout, btn_touchevent, btn_bmob,btn_take_photo,btn_gesture,btn_qrscan;
+            btn_tablayout, btn_touchevent, btn_bmob,btn_take_photo,btn_gesture,btn_qrscan,btn_hybrid;
 
     private Toolbar toolbar;
 
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //将该activity加入管理
         ActivityManagerUtil.getInstance().pushOneActivity(this);
         initView();
-        EventBus.getDefault().register(this);
+//        EventBus.getDefault().register(this);
     }
 
     private void initView() {
@@ -126,6 +127,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_take_photo= (Button) findViewById(R.id.btn_take_photo);
         btn_gesture=(Button) findViewById(R.id.btn_gesture);
         btn_qrscan= (Button) findViewById(R.id.btn_qrscan);
+        btn_hybrid= (Button) findViewById(R.id.btn_hybrid);
+        btn_hybrid.setOnClickListener(this);
         btn_qrscan.setOnClickListener(this);
         btn_gesture.setOnClickListener(this);
         btn_take_photo.setOnClickListener(this);
@@ -271,22 +274,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_qrscan:
                 startActivity(new Intent(this, ZxingQrcodeActivity.class));
                 break;
+            case R.id.btn_hybrid:
+                startActivity(new Intent(this, HybridActivity.class));
+                break;
             default:
                 break;
         }
     }
 
-    @Subscribe
-    public void onEvent(EventOne eventOne) {
-        Toast.makeText(this, "eventOne", Toast.LENGTH_SHORT).show();
-
-    }
-
-    @Subscribe
-    public void onEvent(EventTwo eventOne) {
-        Toast.makeText(this, "eventTwo", Toast.LENGTH_SHORT).show();
-
-    }
+//    @Subscribe
+//    public void onEvent(EventOne eventOne) {
+//        Toast.makeText(this, "eventOne", Toast.LENGTH_SHORT).show();
+//
+//    }
+//
+//    @Subscribe
+//    public void onEvent(EventTwo eventOne) {
+//        Toast.makeText(this, "eventTwo", Toast.LENGTH_SHORT).show();
+//
+//    }
 
     @Override
     protected void onDestroy() {

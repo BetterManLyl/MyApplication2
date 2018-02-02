@@ -1,17 +1,12 @@
 package com.example.lyl.myapplication.rxjava;
 
 import android.content.Intent;
-import android.database.MergeCursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v7.text.AllCapsTransformationMethod;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -19,34 +14,29 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.blankj.utilcode.util.LogUtils;
 import com.example.lyl.myapplication.BaseActivity;
 import com.example.lyl.myapplication.R;
 import com.example.lyl.myapplication.api.LoginSuccess;
 import com.example.lyl.myapplication.api.NetWorkService;
 import com.example.lyl.myapplication.api.Utils;
 import com.example.lyl.myapplication.bean.Liebiao;
+import com.example.lyl.myapplication.bean.LoginSucess;
 import com.example.lyl.myapplication.rxjava.login.JsonUtils;
 import com.example.lyl.myapplication.rxjava.login.LoginUtils;
 import com.example.lyl.myapplication.rxjava.login.entity.Login;
-import com.inuker.bluetooth.library.utils.MD5Utils;
 import com.jakewharton.rxbinding.view.RxView;
 import com.jakewharton.rxbinding.widget.RxTextView;
 import com.lzy.okgo.OkGo;
-import com.lzy.okgo.callback.AbsCallback;
 import com.lzy.okgo.model.Response;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
-import java.util.function.Function;
 
 import rx.Observable;
 import rx.Observer;
@@ -84,24 +74,11 @@ public class RxJavaActivity extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rxjava);
-//        OkGo.<Liebiao>post("")
-//                .params("", "")
-//                .execute(new AbsCallback<Liebiao>() {
-//                    @Override
-//                    public void onError(Response<Liebiao> response) {
-//                        super.onError(response);
-//                    }
-//
-//                    @Override
-//                    public void onSuccess(Response<Liebiao> response) {
-//
-//                    }
-//
-//                    @Override
-//                    public Liebiao convertResponse(okhttp3.Response response) throws Throwable {
-//                        return null;
-//                    }
-//                });
+        /**
+         * 测试OkGo网络请求框架
+         */
+        okGoRequest();
+
         ed_debounce = (EditText) findViewById(R.id.ed_debounce);
         button = (Button) findViewById(R.id.btn_rxbindding);
         btn_drawable = (Button) findViewById(R.id.btn_drawable);
@@ -488,6 +465,29 @@ public class RxJavaActivity extends BaseActivity {
 
         //解决订阅关系
         //  sub.unsubscribe();
+    }
+
+    private void okGoRequest() {
+        OkGo.<LoginSucess>get("http://36.7.144.130:6020/api/phone/logins")
+                .params("loginName", "222222")
+                .params("password", "888888")
+                .execute(new MyCallBack<LoginSucess>(this) {
+
+                    @Override
+                    public void onError(Response<LoginSucess> response) {
+                        super.onError(response);
+                    }
+
+                    @Override
+                    public void onSuccess(Response<LoginSucess> response) {
+                        LogUtils.eTag("lyl1", "登录成功");
+                    }
+
+                    @Override
+                    public LoginSucess convertResponse(okhttp3.Response response) throws Throwable {
+                        return null;
+                    }
+                });
     }
 
     /**
